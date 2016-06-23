@@ -12,7 +12,51 @@
 
       <div class="col-8-12">
         <div class="content">
+          <h2>Running tests in commandline</h2>
+          <div>
+            <p>
+              Start simple <code>php run.php -c [config.json]</code> your tests. You can overwrite your config file with
+              follow additional parameters:
+            </p>
+            <ul>
+              <li>
+                -d [directory] <em>path to test directory</em>
+              </li>
+              <li>
+                -i [imagedirectory] <em>path to image directory vor captured screenshots</em>
+              </li>
+              <li>
+                -s [seleniumhub][http://localhost:4444/wd/hub] <em>reset the target selenium hub.</em>
+              </li>
+              <li>
+                -username <em>username for saucelabs connection</em>
+              </li>
+              <li>
+                -access_key <em>username for saucelabs access_key</em>
+              </li>
+              <li>
+                -saucelabsSelenium <em>username for saucelabs Selenium hub</em>
+              </li>
+              <li>
+                -local <em>if you would like to run your test local, even though you have set the saucelabs
+                credentials </em>
+              </li>
+            </ul>
 
+            <p>Here is a example config file:</p>
+            <import src="doc/jsonExample.xml"></import>
+            <p>
+              The Parameters <em>fullscreen</em> and <em>dimensional</em> are conflicting. If fullscreen is set,the
+              dimension parameters are overwrite.
+            </p>
+          </div>
+        </div>
+        <div class="content">
+          <h2>Planned features</h2>
+          <ul>
+            <li>automatic screenshot comparison</li>
+            <li>better result output</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -20,9 +64,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
   <script src="htmlDoc/javascript/htmlDoc.js"></script>
   <script type="text/javascript">
-    /**
-     * you can use the settings object
-     */
+
     $('import').importHTML({
       menu: $('#menu'),
       menuSettings: {

@@ -1,0 +1,40 @@
+<root>
+  <content>
+<pre>
+  <code>
+{
+  "testonaut": {
+    "browsers": [{
+      "deviceName" : "Google Nexus 5",
+      "name" : "chrome",
+      "fullscreen" : "true",
+      "dimension" : {
+        "width" : "1024",
+        "height": "768"
+      }
+    },
+    {
+      "name" : "firefox",
+      "fullscreen" : "true",
+      "dimension" : {
+        "width" : "1024",
+        "height": "768"
+      }
+    }],
+    "config": {
+      "imageDir":"images",
+      "testDir": "root/test/test2",
+      "hub" : "http://localhost:4444/wd/hub"
+    }
+    "local": true,
+    "saucelabs" : {
+      "username" : 'username',
+      "access_key" : 'access_key',
+      "hub" : 'hub address'
+    }
+  }
+}
+  </code>
+</pre>
+  </content>
+</root>
