@@ -1,0 +1,3 @@
+[submodule "htmlDoc"]
+	path = htmlDoc
+	url = https://github.com/mafflerbach/htmlDoc.git
