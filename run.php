@@ -45,6 +45,22 @@ if (!isset($args['s'])) {
   $args['s'] = $conf['testonaut']['config']['hub'];
 }
 
+if (!isset($args['username'])) {
+  if(isset($conf['testonaut']['saucelabs']['username'])){
+    $args['username'] = $conf['testonaut']['saucelabs']['username'];
+  }
+}
+if (!isset($args['access_key'])) {
+  if(isset($conf['testonaut']['saucelabs']['access_key'])){
+    $args['access_key'] = $conf['testonaut']['saucelabs']['access_key'];
+  }
+}
+if (!isset($args['saucelabsSelenium'])) {
+  if(isset($conf['testonaut']['saucelabs']['hub'])){
+    $args['saucelabs_selenium'] = $conf['testonaut']['saucelabs']['hub'];
+  }
+}
+
 
 for($i = 0; $i < count($browsers); $i++) {
   $runner = new \testonaut\Command\Line\Runner($args, $browsers[$i]);
