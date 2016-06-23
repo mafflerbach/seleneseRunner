@@ -1,0 +1,15 @@
+{
+  "name": "afflerbach/senleneseRunner",
+  "description": "The seleneseRunner simple commmandline tool, which you can running selenese tests on every selenium node in your infrastructure.",
+  "minimum-stability": "stable",
+  "license": "GPL",
+  "authors": [
+    {
+      "name": "Maren Afflerbach",
+      "email": "maren@afflerbach.info"
+    }
+  ],
+  "require": {
+    "facebook/webdriver": "dev-master"
+  }
+}

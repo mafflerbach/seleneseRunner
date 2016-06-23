@@ -1,0 +1,21 @@
+{
+  "testonaut": {
+    "browsers": [
+      {
+        "name": "chrome",
+        "dimension": {
+          "width": "1024",
+          "height": "768"
+        }
+      }
+    ],
+    "config": {
+      "imageDir": "images",
+      "testDir": "example",
+      "hub": "http://localhost:4444/wd/hub"
+    },
+    "saucelabs": {
+    },
+    "local" : true
+  }
+}
